@@ -35,7 +35,6 @@ class CoursesPage extends React.Component {
 
 
   render () {
-    debugger;
     return (
       <div>
         <h1> Courses </h1>
@@ -50,12 +49,11 @@ class CoursesPage extends React.Component {
 }
 
 CoursesPage.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-  courses: PropTypes.array.isRequired
+  courses: PropTypes.array.isRequired,
+  createCourse: PropTypes.func.isRequired
 }
 
 function mapStateToProps(state, ownProps) {
-  debugger;
   return {
     courses: state.courses
   }
