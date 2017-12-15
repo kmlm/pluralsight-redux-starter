@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import CourseListRow from './CourseListRow';
 
-const CourseList  = ({courses, }) => {
+const CourseList  = ({courses, deleteCourse}) => {
   return (
     <table className="table">
       <thead>
