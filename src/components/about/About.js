@@ -1,7 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router';
 
-class About extends React.Component {
+class AboutPage extends React.Component {
   render () {
     return (
       <div className='jumbotron'>
@@ -12,4 +11,4 @@ class About extends React.Component {
 }
 }
 
-export default About;
+export default AboutPage;
