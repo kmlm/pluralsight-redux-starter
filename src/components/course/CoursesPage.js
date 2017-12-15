@@ -7,7 +7,6 @@ class CoursesPage extends React.Component {
 
   constructor (props, context) {
     super(props, context);
-    }
   }
 
   courseRow(course, index) {
@@ -29,18 +28,18 @@ class CoursesPage extends React.Component {
 
 CoursesPage.propTypes = {
   courses: PropTypes.array.isRequired,
-  // createCourse: PropTypes.func.isRequired
+  loadCoursesSuccess: PropTypes.func.isRequired
 }
 
 function mapStateToProps(state, ownProps) {
   return {
-    // courses: state.courses
+    courses: state.courses
   }
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    createCourse: course => dispatch(courseActions.createCourse(course))
+    loadCoursesSuccess: () => dispatch(courseActions.loadCoursesSuccess())
   }
   }
 
